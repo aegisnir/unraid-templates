@@ -2,7 +2,7 @@
   <Profile>
     Unraid packages by Aegisnir, focused on security-hardened containers for self-hosted AI tools.  Each app credits its upstream authors.
 
-    **Support:** report packaging and container problems on the app's GitHub issues page.  Report problems with the app itself to its upstream project, linked on each listing.
+    **Support:** report packaging and container problems in the app's Unraid forum support thread or on its GitHub issues page.  Report problems with the app itself to its upstream project, linked on each listing.
   </Profile>
   <Icon>https://raw.githubusercontent.com/aegisnir/unraid-templates/main/icon.png</Icon>
   <WebPage>https://github.com/aegisnir/unraid-templates</WebPage>

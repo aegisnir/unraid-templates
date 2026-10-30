@@ -10,7 +10,11 @@ Unraid Community Applications templates.  This repo holds template definitions o
 
 ## Support
 
-Report packaging and container problems on the app's own GitHub issues page.  Report problems with the app itself to its upstream project.
+Report packaging and container problems in the app's Unraid forum support thread or on its GitHub issues page.  Report problems with the app itself to its upstream project.
+
+| App | Forum support thread |
+|---|---|
+| SD-WebUI-Forge-Neo-Unraid | [[Support] Aegisnir - SD-WebUI-Forge-Neo-Unraid](https://forums.unraid.net/topic/201112-support-aegisnir-sd-webui-forge-neo-unraid/) |
 
 ## License
 
