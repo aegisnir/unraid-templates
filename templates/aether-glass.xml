@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<Plugin>
+  <Name>Aether Glass</Name>
+  <PluginURL>https://raw.githubusercontent.com/aegisnir/Aether-Glass-Unraid-Theme/main/aether-glass.plg</PluginURL>
+  <PluginAuthor>aegisnir</PluginAuthor>
+  <Category>Tools:Utilities</Category>
+  <Icon>https://raw.githubusercontent.com/aegisnir/Aether-Glass-Unraid-Theme/main/source/aether-glass.png</Icon>
+  <Project>https://github.com/aegisnir/Aether-Glass-Unraid-Theme</Project>
+  <Support>https://github.com/aegisnir/Aether-Glass-Unraid-Theme/issues</Support>
+  <License>https://github.com/aegisnir/Aether-Glass-Unraid-Theme/blob/main/LICENSE</License>
+  <MinVer>7.2.0</MinVer>
+  <ExtraSearchTerms>theme dark purple violet glass css webgui skin</ExtraSearchTerms>
+  <Screenshot>https://raw.githubusercontent.com/aegisnir/Aether-Glass-Unraid-Theme/main/screenshots/dashboard.png</Screenshot>
+  <Screenshot>https://raw.githubusercontent.com/aegisnir/Aether-Glass-Unraid-Theme/main/screenshots/login.png</Screenshot>
+  <Screenshot>https://raw.githubusercontent.com/aegisnir/Aether-Glass-Unraid-Theme/main/screenshots/settings.png</Screenshot>
+  <Overview>
+    An unofficial deep-violet frosted-glass theme for the Unraid webGUI. Not made or endorsed by Lime Technology.
+
+    Themes every normal page, the login page, the reboot page and plugin pop-up log windows. CSS only: it changes how pages look and nothing else.
+
+    Safety: the theme pauses itself after every Unraid update until you approve the new version in Settings, User Preferences, Aether Glass. A kill switch file on the flash drive turns it off even if the webGUI won't load. Turning it off or uninstalling restores Unraid's original files byte for byte. Unraid's own files on the flash drive are never edited, and every download is pinned by SHA256.
+
+    Requires the Black display theme (Settings, Display Settings). Tested on Unraid 7.3.4.
+  </Overview>
+</Plugin>
