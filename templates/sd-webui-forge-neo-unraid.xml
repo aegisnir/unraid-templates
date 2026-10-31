@@ -10,7 +10,7 @@
     <Tag>dev</Tag>
     <TagDescription>Testing: every change as soon as it builds, may break</TagDescription>
   </Branch>
-  <Registry>https://ghcr.io</Registry>
+  <Registry>https://github.com/aegisnir/SD-WebUI-Forge-Neo-Unraid/pkgs/container/sd-webui-forge-neo-unraid</Registry>
   <Icon>https://raw.githubusercontent.com/aegisnir/unraid-templates/main/icon.png</Icon>
   <ExtraParams>--runtime=nvidia --read-only --tmpfs /tmp:rw,noexec,nosuid,nodev,size=2g --security-opt no-new-privileges:true --cap-drop=ALL --cap-add=CHOWN --cap-add=FOWNER --cap-add=SETUID --cap-add=SETGID --pids-limit=2048</ExtraParams>
   <PostArgs></PostArgs>
@@ -22,7 +22,7 @@
     Image: <b>ghcr.io/aegisnir/sd-webui-forge-neo-unraid</b>, tag <b>latest</b> (stable, recommended) or <b>dev</b> (testing, may break), chosen at install.
 
     README:
-    <b>https://github.com/aegisnir/sd-webui-forge-neo-unraid/blob/dev/README.md</b>
+    <b>https://github.com/aegisnir/sd-webui-forge-neo-unraid/blob/main/README.md</b>
 
     ## Extra Parameters (advanced view), flag by flag
     - <b>--runtime=nvidia</b>: gives the container your NVIDIA GPU. Don't remove it; GPU choice is the GPU (NVIDIA_VISIBLE_DEVICES) setting.
@@ -72,19 +72,19 @@
   Forge Neo (Stable Diffusion WebUI) by Haoming02, packaged for Unraid by Aegisnir, with security hardening. Requires an NVIDIA GPU.
   Image: ghcr.io/aegisnir/sd-webui-forge-neo-unraid, tag latest (stable, recommended) or dev (testing, may break), chosen at install.
   Extra Parameters (advanced view) hold --runtime=nvidia (the GPU) and the security options; each is explained in the Description and the README.
-  Full setup and usage docs: https://github.com/aegisnir/sd-webui-forge-neo-unraid/blob/dev/README.md
+  Full setup and usage docs: https://github.com/aegisnir/sd-webui-forge-neo-unraid/blob/main/README.md
 
-    This template passes Forge Neo data storage through --data-dir.
+  This template passes Forge Neo data storage through --data-dir.
 
-    - Models, outputs, extensions, caches, and other working data are stored in the mapped data share instead of the container filesystem.
-    - Python, PyTorch and all WebUI dependencies are built into the image, so startup needs no downloads (extensions may still install their own packages).
-    - The data directory can grow very large very quickly, so I recommend storing it outside of appdata when possible.
-    - Launch flags are options in this template (common ones visible, the rest under Show more settings). Anything else goes in Extra Launch Flags.
-    - If startup fails with a Torch GPU check error, you can temporarily add --skip-torch-cuda-test to Extra Launch Flags for troubleshooting.
-    - If an extension breaks torch, delete /data/python-user on the host and restart. It holds only packages installed by extensions.
-    - WebUI login is enabled by default unless you explicitly set your own --gradio-auth or --gradio-auth-path in Extra Launch Flags.
-    - Container logs annotate known harmless warnings inline and display a [READY] box when the WebUI is accepting connections.
-    - A built-in Docker healthcheck monitors port 7860 with conservative timers to avoid false positives during heavy operations.
+  - Models, outputs, extensions, caches, and other working data are stored in the mapped data share instead of the container filesystem.
+  - Python, PyTorch and all WebUI dependencies are built into the image, so startup needs no downloads (extensions may still install their own packages).
+  - The data directory can grow very large very quickly, so I recommend storing it outside of appdata when possible.
+  - Launch flags are options in this template (common ones visible, the rest under Show more settings). Anything else goes in Extra Launch Flags.
+  - If startup fails with a Torch GPU check error, you can temporarily add --skip-torch-cuda-test to Extra Launch Flags for troubleshooting.
+  - If an extension breaks torch, delete /data/python-user on the host and restart. It holds only packages installed by extensions.
+  - WebUI login is enabled by default unless you explicitly set your own --gradio-auth or --gradio-auth-path in Extra Launch Flags.
+  - Container logs annotate known harmless warnings inline and display a [READY] box when the WebUI is accepting connections.
+  - A built-in Docker healthcheck monitors port 7860 with conservative timers to avoid false positives during heavy operations.
   </Overview>
   <Category>AI:</Category>
   <ExtraSearchTerms>stable diffusion forge neo a1111 flux image generation</ExtraSearchTerms>
