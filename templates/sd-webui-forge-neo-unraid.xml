@@ -111,7 +111,7 @@
   <Privileged>false</Privileged>
   <Project>https://github.com/Haoming02/sd-webui-forge-classic/tree/neo</Project>
   <Support>https://forums.unraid.net/topic/201112-support-aegisnir-sd-webui-forge-neo-unraid/</Support>
-  <Changelog>https://github.com/aegisnir/sd-webui-forge-neo-unraid/blob/dev/CHANGELOG.md</Changelog>
+  <Changelog>https://github.com/aegisnir/sd-webui-forge-neo-unraid/blob/main/CHANGELOG.md</Changelog>
   <TemplateURL>https://raw.githubusercontent.com/aegisnir/unraid-templates/main/templates/sd-webui-forge-neo-unraid.xml</TemplateURL>
   <Config Name="WebUI" Type="Port" Target="7860" Default="7860" Mode="tcp" Display="always" Required="true" Mask="false" Description="Port on your server for the WebUI (default 7860). The WebUI always uses 7860 inside the container; change this to use a different port on your server."/>
   <Config Name="Config Directory" Type="Path" Target="/config" Default="/mnt/user/appdata/SD-WebUI-Forge-Neo-Unraid" Mode="rw" Display="always" Required="true" Mask="false" Description="Host path for auth files and WebUI settings (appdata). Kept separate from the large AI data share so it can be backed up with standard Unraid appdata backup tools. Default: /mnt/user/appdata/SD-WebUI-Forge-Neo-Unraid"/>
